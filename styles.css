@@ -1,0 +1,157 @@
+/* --- Base Styles --- */
+body {
+    font-family: 'Avenir', 'Helvetica Neue', Arial, sans-serif;
+    background-color: #F8F8FF; /* Очень светлый, почти белый с оттенком синего */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #007BFF; /* ЯРКИЙ СИНИЙ! */
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.header h1 {
+    margin-bottom: 5px;
+    font-size: 2.2em;
+}
+
+/* Стиль для нового описания */
+.description {
+    font-size: 1.1em;
+    color: #E0FFFF; /* Светло-бирюзовый для контраста на синем фоне */
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.description b {
+    color: #FFFF00; /* Желтый акцент для выделенных слов */
+}
+
+.container {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 0 25px;
+}
+
+/* --- Content Sections (Карточки) --- */
+.section-content {
+    background: white;
+    padding: 30px;
+    margin-bottom: 35px;
+    border-radius: 12px;
+    border: 1px solid #E0FFFF; /* Тонкая светло-синяя рамка */
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.15); /* Синяя тень */
+}
+
+h2 {
+    color: #007BFF; /* ЯРКИЙ СИНИЙ! */
+    font-weight: 700;
+    border-bottom: 2px solid #B0E0E6; /* Светло-голубая линия */
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* Стиль для списка классов */
+.class-list {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.class-list li {
+    font-weight: 500;
+    color: #1E90FF; /* Ярко-синий */
+}
+
+ol li {
+    margin-bottom: 10px;
+}
+
+/* --- Image Gallery & Animation --- */
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.mood-image {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #007BFF; /* Синяя рамка вокруг картинок */
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.hover-grow:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 15px 25px rgba(0, 123, 255, 0.3); /* Яркая синяя тень при наведении */
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 0.9em;
+    color: #6c757d;
+}
+
+/* --- Neighbor Section Styling (Сохраняем акцент) --- */
+.neighbor-section {
+    border-left: 6px solid #FF4500; /* Оранжево-красный для срочного предупреждения (потоп!) */
+}
+
+.alert-header {
+    color: #FF4500;
+    border-bottom-color: #FF4500;
+}
+
+.alert-text {
+    background-color: #FFF0F5; /* Очень светлый, нейтральный фон для текста */
+    color: #333; 
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+    border: 1px solid #FFDAB9;
+}
+
+/* --- Link Style --- */
+.link-style, footer a {
+    color: #1E90FF; /* Dodger Blue */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.link-style:hover, footer a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* --- Fade-In Animation --- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #E0FFFF; /* Светлый синий фон футера */
+    color: #6c757d;
+    font-size: 0.9em;
+    margin-top: 50px;
+    border-top: 1px solid #B0E0E6;
+}
